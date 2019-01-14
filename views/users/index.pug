@@ -1,0 +1,10 @@
+h1 users
+a(href="users/create") Add new
+form(method="get")
+  input(name="q",type="text")
+  button(type="submit") Search
+ul
+each user in users
+  li= user.name 
+    span &nbsp;
+    a(href='users/'+user.id) edit
